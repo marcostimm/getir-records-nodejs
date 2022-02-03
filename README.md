@@ -2,6 +2,10 @@
 
 RESTful API that provides a POST endpoint that fetches records from the database (MongDB).
 
+## Public access
+
+-   [https://morning-meadow-09110.herokuapp.com/](https://morning-meadow-09110.herokuapp.com/)
+
 ## Run Locally
 
 Clone the project
