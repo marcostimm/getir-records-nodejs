@@ -5,6 +5,7 @@ const helmet = require('helmet');
 const router = require('./routes/recordsRoutes.js');
 const db = require('./db');
 const morgan = require('morgan');
+const port = process.env.PORT || 5000;
 require('dotenv').config();
 
 // Initialize express
@@ -26,8 +27,8 @@ app.use('*', (req, res) =>
 db.connect(process.env.MONGO_URI)
     .then(() => {
         // Starts the server and listens on port 3000
-        app.listen(3000);
-        console.log('Server started at port 3000');
+        app.listen(port);
+        console.log(`App listening on port ${port}`);
     })
     .catch((err) => {
         throw new InternalError('Server could not be initialized');
