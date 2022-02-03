@@ -1,0 +1,31 @@
+{
+    "name": "getir-node",
+    "version": "1.0.0",
+    "description": "Getir NodeJS ",
+    "main": "src/app.js",
+    "scripts": {
+        "test": "jest --watchAll",
+        "start": "nodemon ./src/app.js",
+        "start-server": "node app.js",
+        "build": "npm run clean && npm run transpile"
+    },
+    "author": "Marcos Timm <timm@marcos.im>",
+    "devDependencies": {
+        "body-parser": "^1.19.1",
+        "jest": "^27.4.7",
+        "mockingoose": "^2.6.0",
+        "nodemon": "^1.18.3",
+        "supertest": "^6.2.2"
+    },
+    "dependencies": {
+        "dotenv": "^15.0.0",
+        "express": "^4.16.3",
+        "express-validator": "^6.14.0",
+        "helmet": "^5.0.2",
+        "mongoose": "^6.1.10",
+        "morgan": "^1.10.0"
+    },
+    "engines": {
+        "node": "14.0.0"
+    }
+}
